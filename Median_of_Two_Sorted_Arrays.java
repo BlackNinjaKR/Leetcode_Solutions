@@ -50,7 +50,7 @@ O(1)
 */
 
 import java.util.Scanner;
-class Solution
+class MedianArraySolution
 {
     public double findMedianSortedArrays(int[] nums1, int[] nums2)
     {
@@ -108,7 +108,7 @@ class Solution
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        MedianArraySolution solution = new MedianArraySolution();
         int[] nums1 = solution.input();
         int[] nums2 = solution.input();
         
