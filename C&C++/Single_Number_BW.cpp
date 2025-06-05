@@ -15,15 +15,20 @@ Input: nums = [1]
 Output: 1
 
 
-
 Intuition
-My first thought was to check how many times each number appears in the array. Since all elements except one appear exactly twice, I can count the frequency of each number and return the one with count equal to 1.
+The key insight is to use the properties of the XOR (^) bitwise operator. XOR has two very useful characteristics:
+
+a ^ a = 0 – any number XORed with itself is 0.
+a ^ 0 = a – any number XORed with 0 remains unchanged.
+Since every number in the array appears exactly twice except for one unique number, XORing all the numbers together will cancel out the duplicates and leave only the number that appears once.
 
 Approach
-For each number in the array, I loop through the entire array again to count its frequency. If I find that its count is 1, I return it as the result. This approach ensures correctness but has a time complexity of O(n^2) due to the nested loops.
+Initialize a variable result to 0.
+Iterate through the array and XOR each element with result.
+After the loop, result will contain the single number that doesn't have a duplicate.
 
 Complexity
-Time complexity: O(n^2)
+Time complexity: O(1)
 Space complexity: O(1)
 */
 
