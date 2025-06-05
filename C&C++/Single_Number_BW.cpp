@@ -28,7 +28,7 @@ Iterate through the array and XOR each element with result.
 After the loop, result will contain the single number that doesn't have a duplicate.
 
 Complexity
-Time complexity: O(1)
+Time complexity: O(n)
 Space complexity: O(1)
 */
 
