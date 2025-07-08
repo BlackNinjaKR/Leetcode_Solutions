@@ -28,17 +28,34 @@ public class Sqrt_x
 {
     public int mySqrt(int x) //O(n)
     {
-        if (x<2)
-            return x;
+        // if (x<2)
+        //     return x;
 
-        for(long i = 1; i<=(x/2)+1; i++)
+        // for(long i = 1; i<=(x/2)+1; i++)
+        // {
+        //     if ((i*i) == (long)x)
+        //         return (int)i;
+        //     else if ((i*i)>(long)x)
+        //         return (int)i-1;
+        // }
+        // return 0;
+
+        
+        if(x<2) return x;
+        // Binary Search Approach - O(log n)
+        int i = 0, j = x;
+        while (i<=j)
         {
-            if ((i*i) == (long)x)
-                return (int)i;
-            else if ((i*i)>(long)x)
-                return (int)i-1;
+            long mid = (i + j)/2;
+            long sq = mid * mid;
+            if (sq == x)
+                return (int)mid;
+            else if (sq<x)
+                i = (int)mid+1;
+            else
+                j = (int)mid-1;
         }
-        return 0;
+        return (int)j;
     }
     public static void main(String[] args)
     {
