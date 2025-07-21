@@ -57,16 +57,10 @@ cd Java
 javac ProblemName.java
 java ProblemName
 ```
-### To run C++ solutions:
+### To run C&C++ solutions:
 ```bash
-cd C++
+cd C&C++
 g++ ProblemName.cpp -o ProblemName
-./ProblemName
-```
-### To run C solutions:
-```bash
-cd C
-gcc ProblemName.c -o ProblemName
 ./ProblemName
 ```
 ---
