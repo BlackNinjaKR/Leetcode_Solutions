@@ -1,61 +1,94 @@
-# Leetcode Solutions in Java
+# Leetcode Solutions in Java, C, and C++
 
-A collection of Java solutions to various Leetcode problems. This repository provides solutions for algorithm practice and serves as a reference for anyone looking to understand different approaches to solving Leetcode challenges.
+A collection of Java, C, and C++ solutions to various Leetcode problems. This repository provides multiple language implementations for algorithm practice and serves as a reference for learners and enthusiasts who want to understand different approaches and paradigms across languages.
 
-## Table of Contents
-
-- [About](#about)
-- [Solution Structure](#solution-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+---
 
 ## About
 
-Each solution is written in Java, and includes:
+Each solution is provided in one or more of the supported languages:
 
-- **Problem statement**: A summary of the problem, including constraints and examples.
-- **Solution approach**: An explanation of the intuition, approach, and complexity analysis.
-- **Code**: Java code with comments to clarify the logic and methods used.
+- Java
+- C++
+- C
 
-The repository will be updated periodically with new solutions.
+Each solution typically includes:
+
+- *Problem statement*: A summary of the problem, including constraints and examples.
+- *Solution approach*: A brief explanation of the intuition, approach, and complexity analysis.
+- *Code*: Well-documented source code with comments to clarify logic.
+
+The repository is updated periodically with new solutions and language variants.
+
+---
 
 ## Solution Structure
 
-All Java solution files are in a single directory, with each file named to reflect the problem it addresses (e.g., `PalindromeNumber.java`, `ReverseInteger.java`). Each file is self-contained with the problem description, approach, and code.
+Solutions are organized by language:
+
+```
+Leetcode-Solutions/
+│
+├── Java/
+│   ├── PalindromeNumber.java
+│   └── ReverseInteger.java
+│
+└── C&C++/
+    ├── PalindromeNumber.c
+    └── PalindromeNumber.cpp
+    └── ReverseInteger.c
+    └── ReverseInteger.cpp
+```
+Each file is self-contained and named to reflect the problem it addresses.
 
 ## Usage
 
-You can clone or download the repository for reference or to run solutions locally.
-
-To run any solution, make sure you have Java installed:
+You can clone or download the repository to explore and run solutions locally.
 
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/Leetcode-Solutions.git
-
-# Navigate to the repository
 cd Leetcode-Solutions
 ```
 
-Then, compile and run a specific Java file:
-
+### To run JAVA solutions:
 ```bash
-# Compile
+cd Java
 javac ProblemName.java
-
-# Run
 java ProblemName
 ```
+### To run C++ solutions:
+```bash
+cd C++
+g++ ProblemName.cpp -o ProblemName
+./ProblemName
+```
+### To run C solutions:
+```bash
+cd C
+gcc ProblemName.c -o ProblemName
+./ProblemName
+```
+---
+
+Make sure you have the appropriate compilers installed:
+
+- Java: `JDK`
+- C++: `g++`
+- C: `gcc`
+
+---
 
 ## Contributing
 
-If you have alternative solutions or optimizations, feel free to submit a pull request.
+If you have alternate implementations, optimizations, or want to add solutions in a new language, contributions are welcome!
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-new-solution`).
-3. Commit your changes (`git commit -am 'Add solution for XYZ problem'`).
-4. Push to your fork and create a pull request.
+2. Create a new branch (`git checkout -b feature/new-solution`).
+3. Add your changes and commit (`git commit -am "Add solution for [Problem Name] in [Language]"`).
+4. Push to your fork and open a pull request.
+
+---
 
 ## License
 
