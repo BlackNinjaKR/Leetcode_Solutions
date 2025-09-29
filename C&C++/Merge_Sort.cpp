@@ -37,7 +37,7 @@ class Merge_Sort
         }
         vector<int> sortArray(vector<int>& nums)
         {
-            mergeSort(nums, 0, sizeof(nums)/sizeof(int)-1);
+            mergeSort(nums, 0, nums.size()-1);
             return nums;
         }
 };
